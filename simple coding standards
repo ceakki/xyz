@@ -1,0 +1,36 @@
+Coding best practices:
+  Each function should only have only one return point.
+ 
+  Functions with many parameters should also have a single associative array used instead.
+ 
+  Classes parameters should be an associative array if more then one parameter used.
+ 
+  In classes you should validate all input variables to ensure the class never raises exceptions.
+ 
+  Classes should have three logging variables: debug, warnings, errors.
+    (In case of errors the code should stop at the first error.)
+ 
+  Use code refactoring to avoid having long functions or similar code blocks.
+ 
+  Testing is the true programming. As such unit tests should always be created and they should be distributed with the code.
+ 
+  Commenting should be used whenever necessary but not in excess.
+ 
+  All codes should be documented to ensure anyone can understand: 
+    What it is used for.
+    How it works.
+    How it should be used.
+ 
+ 
+ 
+Naming standard:
+  JavaScript and Python:
+    Function and variable names should use camelCase.
+    Classes should use UpperCamelCase.
+    Namespaces should use lowercase.
+ 
+  PHP:
+    Variable names should be all lowercase, with words separated by underscores.
+    Functions should follow variable standard with the first word representing the type.
+      (E.g. array_something, str_something, get_something).
+    Classes should follow the same standard as variables but having each word in Upper_Case.
