@@ -5,11 +5,6 @@
    *
    * OpenSSL handler class to guarantee proper usage of OpenSSL and with that high security.
    *
-   * @syntax  SolidOpenSSL::decrypt($string = false, $password = false, $iv = false);
-   * @param   string  $string    Encrypted string.
-   * @param   string  $password  Encryption password.
-   * @param   string  $iv        Initialization vector.
-   * @return  string  Decrypted string.
    */
   class SolidOpenSSL {
 
