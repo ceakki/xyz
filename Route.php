@@ -43,7 +43,7 @@
     /**
      * $trim
      *
-     * String to trim from the begining of the URL path.
+     * String to trim from the beginning of the URL path.
      *
      * @syntax  Route::trim('/route');
      */
@@ -56,7 +56,7 @@
      * Handler for the routes variable.
      *
      * @syntax  Route::set_route($regex = '', $file = '');
-     * @param   string  $regex    Regular expression to amtch against URL.
+     * @param   string  $regex    Regular expression to match against URL.
      * @param   mixed   $route     Information that will help route the request.
      */
     static public function set_route($regex = '', $route = '') {
@@ -67,7 +67,7 @@
     /**
      * Route::__construct()
      *
-     * Class constructor. This does all the magick.
+     * Class constructor. This does all the magic.
      *
      * @syntax  Route::__construct();
      * @return  string  File of the regex that matched.
@@ -113,3 +113,4 @@
   var_dump(Route::$path);
   var_dump(Route::$params);
   var_dump(Route::$route);
+  echo '</pre>';
