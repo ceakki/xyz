@@ -57,10 +57,10 @@
      *
      * @syntax  Route::set_route($regex = '', $file = '');
      * @param   string  $regex    Regular expression to amtch against URL.
-     * @param   string  $file     File to include on a match.
+     * @param   mixed   $route     Information that will help route the request.
      */
-    static public function set_route($regex = '', $file = '') {
-      self::$routes[$regex] = $file;
+    static public function set_route($regex = '', $route = '') {
+      self::$routes[$regex] = $route;
     }
 
 
@@ -99,6 +99,9 @@
   // Configuration
   Route::$trim = '/route';
   Route::set_route('/^list/', 'list.php');
+  // The route info can be an array not just a string.
+  // It can contain any information you might need like:
+  // redirect URL, cache file, controller file etc.
 
 
   // Routing
